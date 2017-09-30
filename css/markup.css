@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+}
+.clearfix {display: inline-block;}
+
+body {font-family: 'Nanum Gothic', 'Malgun Gothic', Helvetica, sans-serif, Verdana; font-size: 16px; color: #333;}
+.wrap {padding: 20px;width: 500px;}
+.wrap h1 {padding-bottom: 20px;font-size: 38px; border-bottom: 1px dashed #ccc;}
+.wrap .content a {display: block;}
+.wrap .content .thumbnail {float: left;width: 80px;padding: 10px 0;text-align: center;}
+.wrap .content .cont {float: left;width: 420px;padding:10px 0;}
+.wrap .content .cont h2 {position: relative;padding-bottom: 10px;font-size: 24px; font-weight: bold; color: #00f;border-bottom: 1px solid #ccc;}
+.wrap .content .cont h2 .score {position: absolute;top: 0;right: 0}
+.wrap .content .cont h2 .score_img {display: inline-block;width: 73px;height: 13px;background: url('../images/img_star.png') no-repeat;}
+.wrap .content .cont h2 .score_txt {font-size: 18px; color: #666;}
+.wrap .content .cont ul {margin-top: 10px;}
+.wrap .content .cont ul li {line-height: 1.5em;color: #666;}
