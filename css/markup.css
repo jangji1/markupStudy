@@ -62,7 +62,8 @@ body {font-family: 'Nanum Gothic', 'Malgun Gothic', Helvetica, sans-serif, Verda
 .wrap .content .cont {float: left;width: 420px;padding:10px 0;}
 .wrap .content .cont h2 {position: relative;padding-bottom: 10px;font-size: 24px; font-weight: bold; color: #00f;border-bottom: 1px solid #ccc;}
 .wrap .content .cont h2 .score {position: absolute;top: 0;right: 0}
-.wrap .content .cont h2 .score_img {display: inline-block;width: 73px;height: 13px;background: url('../images/img_star.png') no-repeat;}
+.wrap .content .cont h2 .score_img {position: relative;display: inline-block;width: 73px;height: 13px;background: url('../images/img_star.png') no-repeat;background-position: 0 -13px;}
+.wrap .content .cont h2 .score_img .on {position: absolute;}
 .wrap .content .cont h2 .score_txt {font-size: 18px; color: #666;}
 .wrap .content .cont ul {margin-top: 10px;}
 .wrap .content .cont ul li {line-height: 1.5em;color: #666;}
