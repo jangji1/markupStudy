@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -53,16 +53,20 @@ table {
     height: 0;
 }
 .clearfix {display: inline-block;}
+.hide {display: none;}
 
 body {font-family: 'Nanum Gothic', 'Malgun Gothic', Helvetica, sans-serif, Verdana; font-size: 16px; color: #333;}
 .wrap {padding: 20px;width: 500px;}
-.wrap h1 {padding-bottom: 20px;font-size: 38px; border-bottom: 1px dashed #ccc;}
-.wrap .content a {display: block;}
+.wrap .subject {padding-bottom: 20px;font-size: 38px; border-bottom: 1px dashed #ccc;}
+.wrap .content {width: 100%;}
 .wrap .content .thumbnail {float: left;width: 80px;padding: 10px 0;text-align: center;}
-.wrap .content .cont {float: left;width: 420px;padding:10px 0;}
-.wrap .content .cont h2 {position: relative;padding-bottom: 10px;font-size: 24px; font-weight: bold; color: #00f;border-bottom: 1px solid #ccc;}
-.wrap .content .cont h2 .score {position: absolute;top: 0;right: 0}
-.wrap .content .cont h2 .score_img {display: inline-block;width: 73px;height: 13px;background: url('../images/img_star.png') no-repeat;}
-.wrap .content .cont h2 .score_txt {font-size: 18px; color: #666;}
-.wrap .content .cont ul {margin-top: 10px;}
-.wrap .content .cont ul li {line-height: 1.5em;color: #666;}
+.wrap .content .thumbnail+.cont {width: 420px;}
+.wrap .content .cont {float: left;width: 100%;padding:10px 0;}
+.wrap .content .cont .title {width: 100%;padding: 0 0 10px;font-size: 24px; font-weight: bold; border-bottom: 1px solid #ccc;}
+.wrap .content .cont .title .title_link {float: left;width:70%;color: #00f;text-decoration: none;}
+.wrap .content .cont .title .score {float: right;}
+.wrap .content .cont .title .score_img {display: inline-block;width: 73px;height: 13px;background: url('../images/img_star.png') no-repeat;font-size: 0;vertical-align: middle;}
+.wrap .content .cont .title .score_txt {font-size: 18px; color: #666;}
+.wrap .content .cont .comments {margin-top: 10px;}
+.wrap .content .cont .comments .comment {line-height: 1.5em;}
+.wrap .content .cont .comments .comment .comment_link {text-decoration: none;color: #666;}
